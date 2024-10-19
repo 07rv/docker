@@ -1,0 +1,15 @@
+version: "3.5"
+
+services:
+  postgres:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: rfvfv
+      POSTGRES_PASS: werf
+      POSTGRES_DB: review
+  redis:
+    image: redis
+    ports:
+      - "6379:6389"
